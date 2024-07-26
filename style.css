@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+}
+
+
+:root {
+    --white-color: white;
+    --black-color: black;
+    --helper-color: #ececec;
+    --help-color: #999; /* Helper color for additional styling */
+    --unique-color: #ff9900; /* Unique color for special elements */
+}
+
+
+/************************************************
+        CSS for Tags Start Here
+*************************************************/
+html{
+    overflow-x: hidden;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+header{
+    position: relative;
+}
+/************************************************
+        Reusable Start Here
+*************************************************/
+
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 130rem;
+}
+
+.hide{
+    visibility: hidden;
+        width: 0rem;
+        height: 0rem;
+}
+.bg{
+    background-color: var(--unique-color);
+}
+
+
+/************************************************
+       Navbar Start Here
+*************************************************/
+nav{
+    gap: 1rem;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 100vv;
+    height: 6vh;
+    transition: all .3s;
+    /* border-bottom: .2rem solid var(--helper-color); */
+}
+.nav-new-chat{
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    border: .1rem solid var(--black-color);
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+}
+.nav-heading{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    transition: all .3s;
+
+
+}
+.nav-new-chat:hover, .nav-heading:hover{
+    background-color: var(--help-color);
+}
+.mobile-menu{
+    display: none;
+}
+
+/************************************************
+        Sidebar Start Here
+*************************************************/
+.sidebar{
+        width: 22rem;
+        height: 100vh;
+        background-color:#ececec;
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 4rem;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: 9999;
+}
+.to-be-shipt{
+    transition: all .2s;
+}
+.side-h{
+    width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 00 1rem;
+    margin-top: 1rem;
+    font-size: 5rem;
+    transition: all .3s;
+}
+.side-h i{
+    font-size: 2.5rem;
+}
+.side-h:hover{
+    background-color: var(--help-color);
+
+}
+
+/* History container */
+.history{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    transition: all .3s;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+
+}
+.history div{
+    font-size: 2rem;
+    padding-left: 1rem;
+    transition: all .3s;
+    width:20.5rem ;
+
+
+
+}
+.history div:hover{
+    background-color: #999;
+    width:20rem ;
+    border-radius: 3rem;
+}
+
+/* Arrow  */
+.side-btn{
+    font-size: 5rem;
+    position: absolute;
+    right: -5rem;
+    top: 50%;
+}
+.menu-close{
+    font-size: 3rem;
+    position: absolute;
+    right: -4rem;
+    top: 6rem;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .1rem solid var(--black-color);
+}
+
+
+
+/************************************************
+        Hero section Start Here
+*************************************************/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 57vh;
+    transition: all .3s;
+}
+.logoDiv{
+        width: 5rem;
+        height: 5rem;
+        background-color: #ececec;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        /* background-image: url(ChatGPT-Logo.jpg); */
+        
+}
+.logo{
+        width: 8rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -1.3rem;
+}
+
+/************************************************
+        Box section Start Here
+*************************************************/
+.box-section{
+        width: 100vw;
+        /* height: 5vh; */
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        /* background-color: aqua; */
+        margin-bottom: 1rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+
+}
+.box{
+    border: .2rem solid var(--help-color);
+    border-radius: 2rem;
+        width: 30rem;
+        height: 7.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left:1rem ;
+}
+.box-h{
+    font-size: 1.5rem;
+}
+.box-para{
+    font-size: 1.5rem;
+    color: var(--help-color);
+}
+.box:hover{
+    background-color:#f2eded ;
+}
+/************************************************
+        inpt section Start Here
+*************************************************/
+
+.input-section{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    margin: 1.5rem 0;
+    /* height: 100rem; */
+}
+.inputBox{
+        width: 63rem;
+        height: 5rem;
+        border-radius: 3rem;
+        border: .2rem solid var(--help-color);
+        font-size: 1.5rem;
+        transition: all .3s;
+}
+.inputBox:hover{
+    border: .2rem solid var(--black-color);
+
+}
+.input-container{
+    position: relative;
+}
+.send-icon, .loading-icon{
+    font-size:3rem;
+    position: absolute;
+    right: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+/************************************************
+        Footer Start Here
+*************************************************/
+
+footer{
+    font-size: 2rem;
+    color: var(--black-color);
+}
+/************************************************
+        Chat Section Start Here
+*************************************************/
+
+.chat-section{
+        overflow-y: auto;
+        width: 100wh;
+        height: 80vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+}
+.chat-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    height: 80%;
+    width: 63rem;
+    font-size: 2rem;
+    /* background-color: #ff9900; */
+    
+}
+
+.reply{
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: 2rem 1fr;
+
+}
+.reply-data, .user-icon{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.ai-icon{
+    height: 2.5rem;
+}
+
+.reply-text{
+    font-size: 1.9rem;
+}
+.user-icon{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/************************************************
+        Media Quaries Start Here
+*************************************************/
+
+@media (max-width:600px) {
+    html{
+        font-size: 55%;
+    }
+    nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 100vv;
+    height: 5vh;
+    border-bottom: .2rem solid var(--helper-color);
+    }
+    .new-chat{
+        font-size: 4rem;
+        border: none;
+    }
+
+    .side-btn{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        font-size: 4rem;
+    }
+}
