@@ -134,6 +134,11 @@ nav{
     font-size: 5rem;
     transition: all .3s;
 }
+
+.side-h-child{
+    gap: 1rem;
+}
+
 .side-h i{
     font-size: 2.5rem;
 }
@@ -282,6 +287,8 @@ nav{
         border: .2rem solid var(--help-color);
         font-size: 1.5rem;
         transition: all .3s;
+        padding-left: 1rem;
+
 }
 .inputBox:hover{
     border: .2rem solid var(--black-color);
