@@ -8,14 +8,14 @@ const loadIcon = document.querySelector(".loading-icon");
 const history_container = document.querySelector(".history");
 let isNewChat = 0;
 
-const apiKey = 'ENTER YOUR OPENAI KEY HERE';
+const apiKey = 'ENTER YOUR OPENAI KEY HERE'; //Replace this with your openAI key
 
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 const database = `always try to answer within 100 charecter.`; // You can add your data here that you wanted to know to the AI.
 const Historybase = `Generate a short summary within 20 characters that summarizes the input.
                     \nExamples of user inputs and their corresponding expected responses:\n
                     \n Input: "Where should I go for a trip?"
-                       Response: "Tour Guide"
+                    Response: "Tour Guide"
                     \nInput: "Write me a Twitter thread for a meme."
                     Response: "Write a Twitter Thread"
                     \nInput: "Tell me how TDM works."
